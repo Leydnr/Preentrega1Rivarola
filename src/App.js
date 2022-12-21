@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { Navbar } from "./components/Navbar";
+import { ItemListConteiner } from "./components/ItemListConteiner"
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+
+      <ItemListConteiner greeting="En nuestra bodega, continúa la historia que nace en el viñedo. Una historia que combina trabajo artesanal, tradición y tecnología, para crear experiencias únicas a la hora de disfrutar de grandes vinos." />
+     
     </div>
   );
 }
